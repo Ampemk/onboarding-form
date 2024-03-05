@@ -100,4 +100,12 @@ model UserAnswer {
 
 Extending this app
 
-The best way to make this app even better is to keep all the important information in the database. When a user sends their answer, the backend will give back the results. The part of the app that decides if someone needs a permit or not should definitely be in the backend. Since PermitFlow covers many different municipalities processes, we'll need to figure out what rules are the same everywhere and what rules are different. We'll need a system where we can put in the requirements in the database. Sometimes, we might even need to create special parts of the app just for certain governments workflows. It's not always easy, especially when working with municipalities, but it's definitely doable.
+The best way to make this app even better is to keep all the important information in the database. When a user sends their answer, the backend will give back the results. The part of the app that decides if someone needs a permit or not should definitely be in the backend. Since PermitFlow covers many different municipalities processes, we'll need to figure out what rules are the same everywhere and what rules are different. We'll need a system where we can put in the requirements in the database. Sometimes, we might even need to create special parts of the app just for certain governments workflows. It's not always easy, especially when working with municipalities, but it's definitely doable. There should also be some frontend validation such as Yup.
+
+# Application backend
+
+Because the app was not built using nextjs, the backend is a different NodeJS App. The architecture for the backend would be as follows:
+
+- Use Prisma
+- Use Express
+- Use Jwt for auth
