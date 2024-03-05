@@ -150,7 +150,7 @@ function StepContentContainer(stepContent: StepContentContainerType) {
           return (
             <FormGroup>
               {areaWorkQuestionResponseExterior.map(
-                (workArea: any, index: number) => {
+                (workArea, index) => {
                   return (
                     <Box key={index}>
                       <Typography variant="body1">
